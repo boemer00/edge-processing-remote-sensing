@@ -1,6 +1,6 @@
 # Edge Processing in Extreme Conditions using Remote Sensing Data
 
---![](docs/TBC)--
+--![](docs/renato-boemer-satellite-remote-sensing.jpeg)--
 
 This project endeavours to engineer a nimble neural network model for real-time classification of satellite imagery under cloud-based edge computing scenarios. Drawing inspiration from the urgent need for rapid and precise data in defence and security realms, this initiative demonstrates the ability to handle high-resolution satellite data with limited computational leverage, particularly emphasising real-world, high-risk applications. This project aims to augment conventional remote sensing methodologies, assuring prompt identification and analysis of crucial features within the imagery, even under the most extreme conditions, such as the Earth's orbit.
 
