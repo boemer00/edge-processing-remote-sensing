@@ -28,7 +28,7 @@ Optuna facilitated the hyperparameter tuning, focusing on:
 - **Dropout Rate & Dense Neurons**: Tailored to the dataset and computational constraints.
 
 ### Training
-The model underwent training with augmentation techniques applied using OpenCV. I employed a validation split to guide the early stopping and model checkpoint callbacks, ensuring an optimal stopping point.
+The model underwent training with augmentation techniques applied using OpenCV.
 
 ## Project Update
-This project is in development (last updated: 02 Nov 23)
+This project is in development (last updated: 02 Nov 2023)
