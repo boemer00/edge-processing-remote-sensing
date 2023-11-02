@@ -31,4 +31,4 @@ Optuna facilitated the hyperparameter tuning, focusing on:
 The model underwent training with augmentation techniques applied using OpenCV. I employed a validation split to guide the early stopping and model checkpoint callbacks, ensuring an optimal stopping point.
 
 ## Project Update
-This project is in development (last updated: 30 Oct 23)
+This project is in development (last updated: 02 Nov 23)
