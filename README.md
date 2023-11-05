@@ -7,7 +7,6 @@ This project develops a compact neural network model for real-time satellite ima
 ## Table of Contents
 - [Objective](#objective)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Model Architecture and Training](#model-architecture-and-training)
 - [License](#license)
 - [Contact](#contact)
@@ -17,18 +16,19 @@ This project develops a compact neural network model for real-time satellite ima
 The core objective is to develop a lightweight, efficient neural network model for real-time satellite image classification on cloud-based edge computing environments.
 
 ## Installation
-Clone the repository and set up a virtual environment:
+Clone the repository into a folder named `edge` and set up a virtual environment:
 
-$ git clone https://github.com/boemer00/edge-processing-remote-sensing.git
-$ cd edge-processing-remote-sensing
-$ python -m venv venv
-$ source venv/bin/activate (Linux) or venv\Scripts\activate (Windows)
+- `$ git clone https://github.com/boemer00/edge-processing-remote-sensing.git edge`
+- `$ cd edge`
+- `$ python -m venv venv`
+- Activate the virtual environment:
+  - On Linux or macOS: `$ source venv/bin/activate`
+  - On Windows (Command Prompt): `$ venv\Scripts\activate`
+  - On Windows (PowerShell): `$ venv\Scripts\Activate.ps1`
 
 Install the package using `setup.py`:
-`pip install .`
 
-## Usage
-Provide clear instructions on how to use the project, including how to run scripts and tests.
+- `$ pip install .`
 
 ## Model Architecture and Training
 The project employs a **MobileNetV3Small**-based architecture, known for its lightweight structure and efficacy on edge devices.
