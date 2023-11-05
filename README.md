@@ -1,34 +1,53 @@
 # Edge Processing in Extreme Conditions using Remote Sensing Data
 
-![](docs/renato-boemer-satellite-remote-sensing.jpeg)
+![Satellite Remote Sensing](docs/renato-boemer-satellite-remote-sensing.jpeg)
 
-This project aims to develop a compact neural network model capable of real-time classification of satellite imagery within cloud-based edge computing contexts. Inspired by the demand for urgent and accurate data in the defence and security sectors, this initiative demonstrates the ability to handle satellite data with limited computational resources, with a particular focus on real-world, high-stakes scenarios. This project aims to augment conventional remote sensing methodologies, assuring prompt identification and analysis of crucial features within the imagery, even under the most extreme conditions, such as the Earth's orbit.
+This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts, tailored for high-stakes scenarios such as the defense and security sectors.
+
+## Table of Contents
+- [Objective](#objective)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Model Architecture and Training](#model-architecture-and-training)
+- [License](#license)
+- [Contact](#contact)
+- [Project Status](#project-status)
 
 ## Objective
 The core objective is to develop a lightweight, efficient neural network model for real-time satellite image classification on cloud-based edge computing environments.
 
 ## Installation
-Clone this repository using git:
-```$ git clone https://github.com/boemer00/edge-processing-remote-sensing.git```
+Clone the repository and set up a virtual environment:
 
-The primary dataset for this project is sourced from [Kaggle's Satellite Image Classification dataset](https://www.kaggle.com/datasets/mahmoudreda55/satellite-image-classification). Additional datasets and resources may be incorporated to enrich the model training phase.
+$ git clone https://github.com/boemer00/edge-processing-remote-sensing.git
+$ cd edge-processing-remote-sensing
+$ python -m venv venv
+$ source venv/bin/activate (Linux) or venv\Scripts\activate (Windows)
+
+Install the package using `setup.py`:
+`pip install .`
+
+## Usage
+Provide clear instructions on how to use the project, including how to run scripts and tests.
 
 ## Model Architecture and Training
+The project employs a **MobileNetV3Small**-based architecture, known for its lightweight structure and efficacy on edge devices.
 
-This is a lightweight model using **MobileNetV3Small** as the backbone, adapted for the classification of satellite imagery. The network is fine-tuned to the nuances of edge computing, with hyperparameters optimized via Optuna to strike a balance between speed and accuracy.
+### Hyperparameter Optimisation
+The model's hyperparameters have been fine-tuned using Optuna, a hyperparameter optimisation framework that systematically searches for the most effective parameter configuration. The focus areas include:
 
-### Core Components
-- **Base**: MobileNetV3Small, chosen for its efficiency on edge devices.
-- **Regularization**: Dropout to prevent overfitting, rate optimized through trials.
-- **Classification Head**: Custom dense layers, ending with a softmax for probability distribution across 4 classes.
+### Training Regimen
+The training process adopts data augmentation strategies to enrich the dataset, enhancing the model's ability to generalise from limited samples. Techniques such as rotation, translation, and scaling are applied to simulate a variety of operational scenarios.
 
-### Optimization
-Optuna facilitated the hyperparameter tuning, focusing on:
-- **Learning Rate**: Ensuring efficient convergence.
-- **Dropout Rate & Dense Neurons**: Tailored to the dataset and computational constraints.
+### Evaluation and Metrics
+Model performance is evaluated using **accuracy** as the training set has equal number of images for each class.
 
-### Training
-The model underwent training with augmentation techniques applied using OpenCV.
+## License
+This project is licensed under the [MIT License](LICENSE.txt).
 
-## Project Update
-This project is in development (last updated: 02 Nov 2023)
+## Contact
+For questions or feedback, please reach out to [Renato Boemer](https://www.linkedin.com/in/renatoboemer/).
+
+## Project Status
+This project is currently in development.
+Last updated on November 5, 2023.

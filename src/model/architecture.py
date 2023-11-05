@@ -1,8 +1,8 @@
 # architecture.py
-from tensorflow.keras.layers import Dropout, Dense, GlobalAveragePooling2D
-from tensorflow.keras.models import Model
-from tensorflow.keras.applications import MobileNetV3Small
-from tensorflow.keras.optimizers import Adam
+from keras.layers import Dropout, Dense, GlobalAveragePooling2D
+from keras.models import Model
+from keras.applications import MobileNetV3Small
+from keras.optimizers import Adam
 import config
 
 class EdgeModel:
