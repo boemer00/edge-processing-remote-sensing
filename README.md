@@ -2,9 +2,7 @@
 
 ![Satellite Remote Sensing](docs/renato-boemer-satellite-remote-sensing.jpeg)
 
-This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts, tailored for high-stakes scenarios such as the defense and security sectors.
-
-This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts. Edge computing refers to the decentralised processing of data, closer to the source of data generation, which facilitates quick response times and reduces the bandwidth needed for data transmission. While edge computing is relevant for the defence and security sectors, its utility extends to other domains including environmental monitoring, disaster response, and urban planning. This project is versatile and can have broad applications.
+This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts. Edge computing refers to the decentralised processing of data, closer to the source of data generation, which facilitates quick response times and reduces the bandwidth needed for data transmission. While edge computing is relevant for the defence and security sectors, its utility extends to other domains including environmental monitoring, disaster response, and urban planning. This project is versatile and can have broad applications. 
 
 ## Table of Contents
 - [Objective](#objective)
