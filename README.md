@@ -2,11 +2,12 @@
 
 ![Satellite Remote Sensing](docs/renato-boemer-satellite-remote-sensing.jpeg)
 
-This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts. Edge computing refers to the decentralised processing of data, closer to the source of data generation, which facilitates quick response times and reduces the bandwidth needed for data transmission. While edge computing is relevant for the defence and security sectors, its utility extends to other domains including environmental monitoring, disaster response, and urban planning. This project is versatile and can have broad applications. 
+This project develops a compact neural network model for real-time satellite imagery classification within cloud-based edge computing contexts. Edge computing refers to the decentralised processing of data, closer to the source of data generation, which facilitates quick response times and reduces the bandwidth needed for data transmission. While edge computing is relevant for the defence and security sectors, its utility extends to other domains including environmental monitoring, disaster response, and urban planning. This project is versatile and can have broad applications.
 
 ## Table of Contents
 - [Objective](#objective)
 - [Installation](#installation)
+- [Docker Usage](#docker-usage)
 - [Model Architecture and Training](#model-architecture-and-training)
 - [License](#license)
 - [Contact](#contact)
@@ -28,15 +29,15 @@ Clone the repository into a folder named `edge` and set up a virtual environment
 
 Install the package using `setup.py`:
 
-- `$ pip install .`
+- `$ pip install -r requirements.txt`
 
 ## Model Architecture and Training
 The project employs a **MobileNetV3Small**-based architecture, known for its lightweight structure and efficacy on edge devices.
 
 ### Hyperparameter Optimisation
-The model's hyperparameters have been fine-tuned using Optuna, a hyperparameter optimisation framework that systematically searches for the most effective parameter configuration. The focus areas include:
+Hyperparameters are optimised using Optuna integrated with MLflow for tracking. The optimisation process is managed through a `pipeline.py` script that puts together data preparation, model training, and hyperparameter searching.
 
-### Training Regimen
+### Training
 The training process adopts data augmentation strategies to enrich the dataset, enhancing the model's ability to generalise from limited samples. Techniques such as rotation, translation, and scaling are applied to simulate a variety of operational scenarios.
 
 ### Evaluation and Metrics
@@ -50,4 +51,4 @@ For questions or feedback, please reach out to [Renato Boemer](https://www.linke
 
 ## Project Status
 This project is currently in development.
-Last updated on November 5, 2023.
+Last updated on 5 Novemeber, 2023.
