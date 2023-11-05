@@ -31,6 +31,21 @@ Install the package using `setup.py`:
 
 - `$ pip install -r requirements.txt`
 
+## Docker Usage
+The project includes a Dockerfile for building a containerised environment. Install Docker on your machine following the instructions for your OS from [Docker's official site](https://docs.docker.com/get-docker/).
+
+To build the Docker image:
+
+`docker build -t edge-model .`
+
+To run the container:
+
+`docker run -it --rm --name edge-model-container edge-model`
+
+Within the Docker container, you can execute the pipeline.py script as follows:
+
+`python src/pipeline/pipeline.py --n_trials=100`
+
 ## Model Architecture and Training
 The project employs a **MobileNetV3Small**-based architecture, known for its lightweight structure and efficacy on edge devices.
 
@@ -51,4 +66,4 @@ For questions or feedback, please reach out to [Renato Boemer](https://www.linke
 
 ## Project Status
 This project is currently in development.
-Last updated on 5 Novemeber, 2023.
+Last updated on 5 November, 2023.
