@@ -12,11 +12,8 @@ from src.data.preprocessing import (
     normalize_image
 )
 
-
 # Path to the raw data directory relative to the test script location
 RAW_DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'raw_data')
-BACKUP_DIR = 'To be created...'
-
 
 def create_backup(source_dir, backup_dir):
     if not os.path.exists(backup_dir):
