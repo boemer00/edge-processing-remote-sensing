@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/renatoboemer/code/edge/src/mlruns/0/9df040276fd945d78bb30b6ec6a37e07/artifacts
+end_time: 1699211505857
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9df040276fd945d78bb30b6ec6a37e07
+run_name: entertaining-frog-10
+run_uuid: 9df040276fd945d78bb30b6ec6a37e07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699210590156
+status: 4
+tags: []
+user_id: renatoboemer

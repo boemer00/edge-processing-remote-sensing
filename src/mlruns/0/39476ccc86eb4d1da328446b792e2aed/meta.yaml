@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/renatoboemer/code/edge/src/mlruns/0/39476ccc86eb4d1da328446b792e2aed/artifacts
+end_time: 1699210353156
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 39476ccc86eb4d1da328446b792e2aed
+run_name: clumsy-slug-376
+run_uuid: 39476ccc86eb4d1da328446b792e2aed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699210051671
+status: 4
+tags: []
+user_id: renatoboemer
