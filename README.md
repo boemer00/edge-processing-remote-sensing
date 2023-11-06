@@ -17,19 +17,32 @@ This project develops a compact neural network model for real-time satellite ima
 The core objective is to develop a lightweight, efficient neural network model for real-time satellite image classification on cloud-based edge computing environments.
 
 ## Installation
-Clone the repository into a folder named `edge` and set up a virtual environment:
+This package uses [Poetry](https://python-poetry.org/) for dependency management and packaging.
 
-- `$ git clone https://github.com/boemer00/edge-processing-remote-sensing.git edge`
-- `$ cd edge`
-- `$ python -m venv venv`
-- Activate the virtual environment:
-  - On Linux or macOS: `$ source venv/bin/activate`
-  - On Windows (Command Prompt): `$ venv\Scripts\activate`
-  - On Windows (PowerShell): `$ venv\Scripts\Activate.ps1`
+### Prerequisites
 
-Install the package using `setup.py`:
+Ensure you have Poetry installed on your system. If not, install it using:
 
-- `$ pip install -r requirements.txt`
+```curl -sSL https://install.python-poetry.org | python3 -```
+
+### Setup
+Clone the repository and navigate into the directory:
+```git clone https://github.com/boemer00/edge-processing-remote-sensing.git edge```
+
+```cd edge```
+
+Install the dependencies and setup the project using Poetry:
+```poetry install```
+
+### Usage
+Activate the Poetry environment shell to run scripts:
+```poetry shell```
+
+Run the pipeline:
+```python src/pipeline/pipeline.py --n_trials=100```
+
+Exit the shell when done:
+```exit```
 
 ## Docker Usage
 The project includes a Dockerfile for building a containerised environment. Install Docker on your machine following the instructions for your OS from [Docker's official site](https://docs.docker.com/get-docker/).
