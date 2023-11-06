@@ -3,6 +3,11 @@ import argparse
 import mlflow.tensorflow
 import optuna
 from optuna.integration.mlflow import MLflowCallback
+import logging
+
+# Set up basic logging configuration
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 from model.data_preparation import load_data
 from model.model import EdgeModel
@@ -28,11 +33,11 @@ def main(args):
 
     # Retrieve the best parameters
     best_trial = study.best_trial
-    print(f"Best trial: {best_trial.number}")
-    print(f"Value: {best_trial.value}")
-    print("Params: ")
+    logger.info(f"Best trial: {best_trial.number}")
+    logger.info(f"Value: {best_trial.value}")
+    logger.info("Params: ")
     for key, value in best_trial.params.items():
-        print(f"    {key}: {value}")
+        logger.info(f"    {key}: {value}")
 
     # Retrain the model with the best parameters
     best_params = best_trial.params
