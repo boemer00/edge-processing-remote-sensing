@@ -114,6 +114,8 @@ if __name__ == "__main__":
         test_data_frame_generation()
         test_resize_images()
         test_normalize_images()
+    except Exception as e:
+        print(f"An error occurred: {e}")
     finally:
         restore_from_backup(BACKUP_DIR, TEST_DATA_DIR)  # Restore once after all tests
     print("All tests passed.")

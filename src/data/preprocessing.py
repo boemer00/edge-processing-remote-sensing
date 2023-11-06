@@ -67,12 +67,12 @@ def resize_image(image, target_size=(224, 224)):
 
 
 def normalize_image(image):
-    """Normalize a single image pixel values to the [0, 1] range."""
+    """Normalise a single image pixel values to the [0, 1] range."""
     return image.astype(np.float32) / 255.0
 
 
 def process_images_in_directory(directory_path, target_size=(224, 224)):
-    """Resize and normalize images in the given directory and its sub-directories."""
+    """Resize and normalise images in the given directory and its sub-directories."""
     for root, _, files in os.walk(directory_path):
         for file in files:
             if file.lower().endswith((".png", ".jpg", ".jpeg")):
@@ -87,7 +87,7 @@ def process_images_in_directory(directory_path, target_size=(224, 224)):
 if __name__ == "__main__":
     data_df = generate_dataframe_from_directory()
 
-    # Process images for resizing and normalization
+    # Process images for resizing and normalisation
     process_images_in_directory(RAW_DATA_DIR)
 
     print(data_df.head())

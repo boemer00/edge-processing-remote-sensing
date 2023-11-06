@@ -78,6 +78,7 @@ def train_model(train_data, val_data, trial_or_params):
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser(description="Train an Edge Model.")
+    parser.add_argument('--n_trials', type=int, default=100, help='Number of trials for optimisation')
     args = parser.parse_args()
 
     # Start Optuna optimisation
