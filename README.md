@@ -27,21 +27,26 @@ Ensure you have Poetry installed on your system. If not, install it using:
 
 ### Setup
 Clone the repository and navigate into the directory:
+
 ```git clone https://github.com/boemer00/edge-processing-remote-sensing.git edge```
 
 ```cd edge```
 
 Install the dependencies and setup the project using Poetry:
+
 ```poetry install```
 
 ### Usage
 Activate the Poetry environment shell to run scripts:
+
 ```poetry shell```
 
 Run the pipeline:
+
 ```python src/pipeline/pipeline.py --n_trials=100```
 
 Exit the shell when done:
+
 ```exit```
 
 ## Docker Usage

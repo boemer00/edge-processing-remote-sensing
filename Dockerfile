@@ -17,7 +17,7 @@ RUN poetry config virtualenvs.create false \
   && poetry install --no-dev --no-interaction --no-ansi
 
 # Copy the content of the local src directory to the working directory
-COPY src/ .
+COPY src/ /edge/src/
 
 # Command to run on container start
-CMD [ "python", "./pipeline.py" ]
+CMD [ "python", "./src/pipeline/pipeline.py" ]
