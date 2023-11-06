@@ -44,11 +44,11 @@ The training process adopts data augmentation strategies to enrich the dataset, 
 Model performance is evaluated using **accuracy** as the training set has equal number of images for each class.
 
 ## License
-This project is licensed under the [MIT License](LICENSE.txt).
+This project is licensed under the [BSD](LICENSE).
 
 ## Contact
 For questions or feedback, please reach out to [Renato Boemer](https://www.linkedin.com/in/renatoboemer/).
 
 ## Project Status
 This project is currently in development.
-Last updated on 5 Novemeber, 2023.
+Last updated on 6 Novemeber, 2023.

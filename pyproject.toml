@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "edge"
+version = "0.1.0"
+description = "Edge is a lightweight, efficient neural network model for real-time satellite image classification on cloud-based edge computing environments."
+authors = ["renato boemer <boemer00@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
