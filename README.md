@@ -11,7 +11,6 @@ This project develops a compact neural network model for real-time satellite ima
 - [Model Architecture and Training](#model-architecture-and-training)
 - [License](#license)
 - [Contact](#contact)
-- [Project Status](#project-status)
 
 ## Objective
 The core objective is to develop a lightweight, efficient neural network model for real-time satellite image classification on cloud-based edge computing environments.
@@ -81,7 +80,3 @@ This project is licensed under the [BSD](LICENSE).
 
 ## Contact
 For questions or feedback, please reach out to [Renato Boemer](https://www.linkedin.com/in/renatoboemer/).
-
-## Project Status
-This project is currently in development.
-Last updated on 6 Novemeber, 2023.
